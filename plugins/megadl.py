@@ -43,7 +43,8 @@ from database.userchats import add_chat
     
 downlaoding_in_megacmd = False
 
-@Client.on_message(filters.regex(pattern=".*http.*"))
+@Client.on_message(filters.private)
+#@Client.on_message(filters.regex(pattern=".*http.*"))
 async def mega_dl(bot, update):
     global downlaoding_in_megacmd
     fuser = update.from_user.id
@@ -51,7 +52,21 @@ async def mega_dl(bot, update):
         await update.reply_text("Sorry! You are Banned!")
         return
     add_chat(fuser)
-    url = update.text
+
+    if update.text:
+        url = update.text
+    if update.document:
+        file = await bot.download_media(update.document)
+        try:
+            with open(file, "r") as file_content:
+                paste_code = file_content.read()
+                for url in paste_code:
+                    return url
+        except Exception as e:
+            return await reply_text.edit(str(e))
+
+
+
     if "mega.nz" in url:
         if ("folder" or "#F" or "#N") not in url:
             usermsg = await bot.send_message(
