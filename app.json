@@ -1,5 +1,5 @@
 {
-  "name": "Mega Link Downloader Bot",
+  "name": "Mega hLink Downloader Bot",
   "description": "This is a telegram bot to download mega.nz links.",
   "keywords": [
     "telegram",
@@ -13,9 +13,9 @@
     "uploader"
   ],
   "success_url": "https://t.me/mega_downloader_robot",
-  "website": "https://github.com/XMYSTERlOUSX/mega-link-downloader-bot",
+  "website": "https://github.com/N93NT0T/mega-link-downloader-bot",
   "logo": "https://telegra.ph/file/a438489c44d17d108f7b5.jpg",
-  "repository": "https://github.com/XMYSTERlOUSX/mega-link-downloader-bot",
+  "repository": "https://github.com/N93NT0T/mega-link-downloader-bot",
   "stack": "container",
   "env": {
     "WEBHOOK": {
@@ -24,46 +24,46 @@
     },
     "TG_BOT_TOKEN": {
       "description": "Make a bot from https://t.me/BotFather and enter the token here.",
-      "value": ""
+      "value": "5176557616:AAHQmVbFp0VYUnAqnHKZvAV75THTJE8WjAs"
     },
     "APP_ID": {
       "description": "Get this value from https://my.telegram.org/apps",
-      "value": ""
+      "value": "11935084"
     },
     "API_HASH": {
       "description": "Get this value from https://my.telegram.org/apps",
-      "value": ""
+      "value": "644b5ad6ad0e5d394cfe6b780f47680c"
     },
     "Bot_username": {
       "description": "Your bot's telegram username (must enter with '@' in the front of the username)",
-      "value": ""
+      "value": "@viralmerahmudabot"
     },
     "OWNER_ID": {
       "description": "Your(owner's) telegram id",
-      "value": ""
+      "value": "1393311560"
     },
     "AUTH_USERS": {
       "description": "Id's of the telegram users, who you want to allow for multitasking - downloading multiple links at once! In heroku separate the ids by space. (don't put commas. Only separate each of the id's with space)",
-      "value": "1023936257 1845875276",
+      "value": "1393311560",
       "required": false
     },
     "REDIS_URI": {
       "description": "Redis Endpoint, Get This Value from http://redislabs.com/try-free (If you don't know how to obtain these values a complete video tutorial is available here:- https://t.me/botzupdate/5)",
-      "value": ""
+      "value": "redis-18866.c9.us-east-1-4.ec2.cloud.redislabs.com:18866"
     },
     "REDIS_PASS": {
       "description": "Redis Password, Get This Value from http://redislabs.com/try-free (If you don't know how to obtain these values a complete video tutorial is available here:- https://t.me/botzupdate/5)",
-      "value": ""
+      "value": "D6dLmF4hCxr5QAMEqbwDi5Lii0AdFgOl"
     },
     "Mega_email": {
       "description": "This is not necessary! Enter your mega email only if you have a mega.nz account with pro/business features. (Keep as 'None' if you don't have one)",
-      "value": "None",
+      "value": "rijibev218@nugaba.com",
       "required": false
     },
     "Mega_password": {
       "description": "This is not necessary! Enter your mega password only if you have a mega.nz account with pro/business features. (Keep as 'None' if you don't have one)",
-      "value": "None",
-      "required": false
+      "value": "",
+      "required": true 
     }
   },
   "addons": [
