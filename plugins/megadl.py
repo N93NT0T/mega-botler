@@ -8,7 +8,7 @@ logging.basicConfig(level=logging.DEBUG,
                     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
 logger = logging.getLogger(__name__)
 
-import asyncio
+import asyncio, csv
 import json
 import math
 import subprocess
