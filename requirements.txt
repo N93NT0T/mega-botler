@@ -1,5 +1,5 @@
 python-telegram-bot
-
+csv
 aiohttp
 beautifulsoup4
 hachoir
