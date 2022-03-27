@@ -8,7 +8,7 @@ logging.basicConfig(level=logging.DEBUG,
                     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
 logger = logging.getLogger(__name__)
 
-import asyncio, csv
+import asyncio
 import json
 import math
 import subprocess
@@ -55,7 +55,7 @@ async def mega_dl(bot, update):
 
     if update.text:
         url = update.text
-    else update.document:
+    else:
         file = await bot.download_media(update.document)
         with open(file, encoding='UTF-8') as f:
             rows = csv.reader(f,delimiter=",",lineterminator="\n")
